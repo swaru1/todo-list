@@ -32,6 +32,7 @@ main .create form {
   flex-direction: column;
   gap: 10px;
   border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.348);
 }
 main .create form #date-time {
   display: flex;
@@ -46,10 +47,20 @@ main .create form #task-inp {
 }
 main .create form button {
   border-radius: 5px;
+  border: none;
+  color: rgb(4, 54, 4);
+  font-weight: 600;
+  background: linear-gradient(45deg, rgb(134, 220, 134), rgb(175, 238, 175));
   width: 130px;
   padding: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.348);
 }
 main .create form button:active {
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(45deg, rgb(134, 220, 134), rgb(175, 238, 175));
+  transform: translateY(-3px);
+  box-shadow: 5px 5px 10px rgba(3, 246, 20, 0.348);
   scale: 0.95;
 }
 main .list {
@@ -63,7 +74,7 @@ main .list .task {
   align-items: center;
   font-size: 1.2em;
   justify-content: space-between;
-  border: 1px solid black;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.348);
   border-radius: 10px;
   padding: 10px;
   background: linear-gradient(45deg, rgb(255, 255, 255), rgba(255, 0, 0, 0.541));
@@ -73,13 +84,28 @@ main .list .task #date {
   font-weight: 600;
 }
 main .list .task .del {
-  padding: 5px 10px;
+  /* padding: 5px 10px;
   border-radius: 5px;
   background-color: rgb(155, 40, 40);
   color: white;
+  font-weight: 600; */
+  border-radius: 5px;
+  border: none;
+  color: rgb(255, 255, 255);
   font-weight: 600;
+  background-color: rgb(126, 42, 42);
+  width: 130px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.842);
+  transition: scale ease-in 0.3sec;
 }
 main .list .task .del:active {
+  /* scale: 0.95;
+  background-color: red; */
+  color: black;
+  font-weight: 600;
+  background: linear-gradient(45deg, rgb(246, 167, 167), rgb(203, 132, 132));
+  transform: translateY(-3px);
+  box-shadow: 5px 5px 10px rgb(50, 13, 13);
   scale: 0.95;
-  background-color: red;
 }/*# sourceMappingURL=style.css.map */
