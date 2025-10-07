@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: monospace;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-image: url(./Assets/abstract-background-with-smooth-lines-beige-white-colors_743855-32255.jpg);
+  padding: 20px;
+}
+main .create {
+  background: rgba(255, 255, 255, 0.478);
+  padding: 20px;
+  border-radius: 10px;
+}
+main .create form {
+  padding: 15px;
+  display: flex;
+  background: linear-gradient(45deg, rgba(255, 0, 0, 0.541), rgb(255, 255, 255));
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+}
+main .create form #date-time {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+main .create form #date-time #date-inp {
+  padding: 5px;
+}
+main .create form #task-inp {
+  padding: 10px;
+}
+main .create form button {
+  border-radius: 5px;
+  width: 130px;
+  padding: 10px;
+}
+main .create form button:active {
+  scale: 0.95;
+}
+main .list {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .list .task {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(45deg, rgb(255, 255, 255), rgba(255, 0, 0, 0.541));
+}
+main .list .task #date {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+main .list .task .del {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgb(155, 40, 40);
+  color: white;
+  font-weight: 600;
+}
+main .list .task .del:active {
+  scale: 0.95;
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
